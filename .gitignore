@@ -1,0 +1,8 @@
+node_modules/
+build/
+.env
+.DS_Store
+npm-debug.log
+firebase-debug.log
+.vscode/
+.env.local
