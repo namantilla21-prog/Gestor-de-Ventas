@@ -1,0 +1,33 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAj65cl_xqeIJonQgXvz6wv_p9gKxTPoIY",
+  authDomain: "gestor-ventas-web.firebaseapp.com",
+  projectId: "gestor-ventas-web",
+  storageBucket: "gestor-ventas-web.firebasestorage.app",
+  messagingSenderId: "93401775169",
+  appId: "1:93401775169:web:c20869643715acc5675ac0",
+  measurementId: "G-4GE6WRCWWE"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
